@@ -25,5 +25,21 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "Books",
+      "urls": [
+        "/secure/books",
+        "/secure/books/search/**",
+        "secure/books/**"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 50,
+        "maxAge": "1d2h",
+        "timeout": "3s"
+      }
+    }
   ]
 }
