@@ -13,7 +13,7 @@ export class WebNotificationService {
   constructor(private http: HttpClient, private swPush: SwPush) {
   }
 
-  get isEnabled() {
+  get isEnabled(): boolean {
     return this.swPush.isEnabled;
   }
 
